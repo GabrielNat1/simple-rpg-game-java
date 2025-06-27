@@ -24,7 +24,8 @@ public class Hero {
 
     public void takeDamage(int damage){
         hp -= damage;
-        System.out.println(name + " took " + damage + " damage!");
+        if (hp < 0) hp = 0;
+        System.out.println(name + " tomou " + damage + " de dano!");
     }
 
     public void attack() {
