@@ -1,12 +1,12 @@
 package com.myrpg;
 
 import com.myrpg.character.Hero;
+import com.myrpg.battle.CombatManager;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("👾 Welcome To MyRpg!");
-
+        System.out.println("👾 Bem-vindo ao MyRpg!");
         Hero hero = new Hero("Soldier", 100);
-        hero.showStatus();
+        CombatManager.startBattle(hero);
     }
 }
